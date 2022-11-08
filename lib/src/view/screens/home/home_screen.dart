@@ -6,10 +6,65 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text('HomeScreen'),
+        backgroundColor: Colors.white,
+        elevation: 1,
+        leading: IconButton(
+          icon: const Icon(
+            Icons.menu,
+            color: Colors.black,
+          ),
+          onPressed: () {},
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(
+              Icons.search,
+              color: Colors.black,
+            ),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: const Icon(
+              Icons.notifications_outlined,
+              color: Colors.black,
+            ),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: const Icon(
+              Icons.favorite_outline,
+              color: Colors.black,
+            ),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: const Icon(
+              Icons.shopping_bag_outlined,
+              color: Colors.black,
+            ),
+            onPressed: () {},
+          ),
+        ],
       ),
-      body: Text('myntra home page'),
+      bottomNavigationBar: BottomNavigationBar(
+        fixedColor: Colors.black,
+        unselectedItemColor: Colors.black,
+        backgroundColor: Colors.white,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+              label: 'Home', icon: Icon(Icons.home_outlined)),
+          BottomNavigationBarItem(
+              label: 'Categories', icon: Icon(Icons.grid_view_outlined)),
+          BottomNavigationBarItem(
+              label: 'Studio', icon: Icon(Icons.tv_outlined)),
+          BottomNavigationBarItem(
+              label: 'Explore', icon: Icon(Icons.explore_outlined)),
+          BottomNavigationBarItem(
+              label: 'Profile', icon: Icon(Icons.person_outline)),
+        ],
+      ),
     );
   }
 }
