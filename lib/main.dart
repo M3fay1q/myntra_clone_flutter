@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:myntra_clone_flutter/src/view/screens/home/splash_screen.dart';
+import 'package:get/get.dart';
+
+import 'src/helper/app_routes.dart';
+import 'src/helper/route_helper.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,12 +13,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'myntra_clone_flutter',
+    return GetMaterialApp(
+      title: 'Myntra Clone Flutter',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SplashScreen(),
+      initialRoute: AppRoutes.splash,
+      getPages: RouteHelper.getAllPages(),
     );
   }
 }
