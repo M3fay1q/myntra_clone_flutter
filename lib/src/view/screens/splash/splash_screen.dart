@@ -12,13 +12,14 @@ class SplashScreen extends StatelessWidget {
     return GetBuilder<SplashController>(
       builder: (controller) {
         return Scaffold(
+          backgroundColor: Colors.white,
           body: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset(
-                  'assets/images/logo.png',
-                  height: 120.0,
+                  'assets/images/logo.webp',
+                  height: 150.0,
                 )
               ],
             ),
