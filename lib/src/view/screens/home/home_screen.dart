@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:myntra_clone_flutter/src/helper/app_routes.dart';
+import 'package:myntra_clone_flutter/src/view/screens/drawer/drawer_screen.dart';
+
+import '../drawer/drawer_controller.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -15,7 +20,9 @@ class HomeScreen extends StatelessWidget {
             Icons.menu,
             color: Colors.black,
           ),
-          onPressed: () {},
+          onPressed: (() {
+            Get.toNamed(AppRoutes.drawer);
+          }),
         ),
         actions: [
           IconButton(
