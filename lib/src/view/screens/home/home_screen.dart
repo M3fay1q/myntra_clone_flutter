@@ -19,11 +19,36 @@ class HomeScreen extends StatelessWidget {
             drawer: Drawer(
               child: ListView(
                 padding: EdgeInsets.zero,
-                children: const [
-                  DrawerHeader(
-                    decoration: BoxDecoration(color: Colors.grey),
-                    child: Text('Drawer Header'),
-                  )
+                children: [
+                  const DrawerHeader(
+                    decoration: BoxDecoration(
+                        color: Colors.blue,
+                        image: DecorationImage(
+                            image: AssetImage('assets/images/welcome.jpg'),
+                            fit: BoxFit.cover)),
+                    child: Text(
+                      'Welcome',
+                      style: TextStyle(
+                        color: Colors.purple,
+                        fontSize: 24,
+                      ),
+                    ),
+                  ),
+                  ListTile(
+                    leading: const Icon(Icons.grid_view_outlined),
+                    title: const Text(
+                      "Shop by Categories",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    onTap: controller.closeDrawer,
+                  ),
+                  ListTile(
+                    leading: const Icon(Icons.shopping_cart_checkout_outlined),
+                    title: const Text("Orders"),
+                    onTap: controller.closeDrawer,
+                  ),
                 ],
               ),
             ),
@@ -71,20 +96,38 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
             bottomNavigationBar: BottomNavigationBar(
-              fixedColor: Colors.black,
-              unselectedItemColor: Colors.black,
+              // onTap: ,
               backgroundColor: Colors.white,
-              items: const <BottomNavigationBarItem>[
+              unselectedItemColor: Colors.black,
+              selectedItemColor: Colors.black,
+              // currentIndex: ,
+              type: BottomNavigationBarType.fixed,
+              items: const [
                 BottomNavigationBarItem(
-                    label: 'Home', icon: Icon(Icons.home_outlined)),
+                  backgroundColor: Colors.white,
+                  icon: Icon(Icons.home_outlined),
+                  label: 'Home',
+                ),
                 BottomNavigationBarItem(
-                    label: 'Categories', icon: Icon(Icons.grid_view_outlined)),
+                  backgroundColor: Colors.white,
+                  icon: Icon(Icons.grid_view_outlined),
+                  label: 'Categories',
+                ),
                 BottomNavigationBarItem(
-                    label: 'Studio', icon: Icon(Icons.tv_outlined)),
+                  backgroundColor: Colors.white,
+                  icon: Icon(Icons.tv_outlined),
+                  label: 'Studio',
+                ),
                 BottomNavigationBarItem(
-                    label: 'Explore', icon: Icon(Icons.explore_outlined)),
+                  backgroundColor: Colors.white,
+                  icon: Icon(Icons.explore_outlined),
+                  label: 'Explore',
+                ),
                 BottomNavigationBarItem(
-                    label: 'Profile', icon: Icon(Icons.person_outline)),
+                  backgroundColor: Colors.white,
+                  icon: Icon(Icons.person_outline),
+                  label: 'Profile',
+                ),
               ],
             ),
           );
