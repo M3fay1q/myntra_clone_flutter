@@ -1,4 +1,8 @@
+import 'dart:js';
+
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'package:myntra_clone_flutter/src/view/screens/home/home_model.dart';
 import 'package:myntra_clone_flutter/src/view/screens/splash/splash_screen.dart';
 
 import '../view/screens/home/home_screen.dart';

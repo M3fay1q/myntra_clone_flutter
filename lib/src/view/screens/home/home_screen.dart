@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myntra_clone_flutter/src/helper/app_routes.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/home_controller.dart';
+import 'package:myntra_clone_flutter/src/view/screens/home/home_model.dart';
 
 class HomeScreen extends StatelessWidget {
-  HomeScreen({Key? key}) : super(key: key);
+  HomeScreen({Key? key, required this.item}) : super(key: key);
 
   final HomeController homeController = Get.put(HomeController());
+  final Item item;
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +61,7 @@ class HomeScreen extends StatelessWidget {
                 icon: const Icon(
                   Icons.menu,
                   color: Colors.black,
-                ), //icon
+                ),
                 onPressed: () {
                   controller.openDrawer();
                 },
@@ -95,6 +97,29 @@ class HomeScreen extends StatelessWidget {
                 ),
               ],
             ),
+//rounded widget
+            body: Container(
+              height: 100,
+              child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 15,
+                  itemBuilder: ((context, index) {
+                    return Padding(
+                      padding: const EdgeInsets.all(7.0),
+                      child: Column(
+                        children: [
+                          CircleAvatar(
+                            backgroundColor: Colors.orangeAccent,
+                            radius: 35,
+                            backgroundImage: NetworkImage(item.image),
+                          ),
+                          Text(item.name),
+                        ],
+                      ),
+                    );
+                  })),
+            ),
+
             bottomNavigationBar: BottomNavigationBar(
               // onTap: ,
               backgroundColor: Colors.white,
