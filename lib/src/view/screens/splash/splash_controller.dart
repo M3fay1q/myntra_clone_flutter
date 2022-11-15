@@ -14,7 +14,7 @@ class SplashController extends GetxController
           ..addStatusListener(
             (status) {
               if (status == AnimationStatus.completed) {
-                Get.toNamed(AppRoutes.home);
+                Get.offNamed(AppRoutes.home);
               }
             },
           );

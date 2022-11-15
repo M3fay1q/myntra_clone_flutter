@@ -28,6 +28,8 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   get: ^4.6.5
+  carousel_slider: ^4.1.1
+  smooth_page_indicator: ^1.0.0+2
   flutter:
     sdk: flutter
 
@@ -62,6 +64,23 @@ flutter:
   assets:
     - assets/images/logo.webp
     - assets/images/welcome.jpg
+    - assets/images/myntra_insider.jpg
+    # rounded_images
+    - assets/images/rounded_images/MEN.png
+    - assets/images/rounded_images/WOMEN.png
+    - assets/images/rounded_images/KID.png
+    - assets/images/rounded_images/BEAUTY.png
+    - assets/images/rounded_images/HOME.png
+    - assets/images/rounded_images/JEWELLERY.png
+    - assets/images/rounded_images/ESSENTIALS.png
+    - assets/images/rounded_images/GADGETS.png
+    #banner_images
+    - assets/images/banner_images/banner1.png
+    - assets/images/banner_images/banner2.png
+    - assets/images/banner_images/banner3.png
+    - assets/images/banner_images/banner4.png
+    - assets/images/banner_images/banner5.jpg
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
