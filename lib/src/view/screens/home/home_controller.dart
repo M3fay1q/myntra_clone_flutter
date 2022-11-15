@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/models/home_banner_item_model.dart';
+import 'package:myntra_clone_flutter/src/view/screens/home/models/home_horizontal_banner_item_model.dart';
 
 import 'models/home_rounded_item_model.dart';
 
@@ -9,10 +10,13 @@ class HomeController extends GetxController {
   var roundedMenuItems = [];
   var bannerMenuItems = [];
   int activeIndex_ = 0;
+  var horizontalBannerMenuItem = [];
+
   @override
   void onInit() {
     prepareRoundedItemModel();
     bannerItemModel();
+    horizontalBannerItemModel();
     super.onInit();
   }
 
@@ -45,17 +49,37 @@ class HomeController extends GetxController {
     bannerMenuItems = [
       HomeBannerItemModel(images: 'assets/images/banner_images/banner1.png'),
       HomeBannerItemModel(images: 'assets/images/banner_images/banner2.png'),
-      HomeBannerItemModel(images: 'assets/images/banner_images/banner3.png'),
-      HomeBannerItemModel(images: 'assets/images/banner_images/banner4.png'),
+      HomeBannerItemModel(images: 'assets/images/banner_images/banner3.webp'),
+      HomeBannerItemModel(images: 'assets/images/banner_images/banner4.jpg'),
       HomeBannerItemModel(images: 'assets/images/banner_images/banner5.jpg'),
     ];
   }
 
+  horizontalBannerItemModel() {
+    horizontalBannerMenuItem = [
+      HomeHorizontalBannerItemModel(image: 'assets/images/h_banner1.png'),
+      HomeHorizontalBannerItemModel(image: 'assets/images/h_banner2.png'),
+      HomeHorizontalBannerItemModel(image: 'assets/images/h_banner3.png'),
+      HomeHorizontalBannerItemModel(image: 'assets/images/h_banner4.png'),
+      HomeHorizontalBannerItemModel(image: 'assets/images/h_banner5.png'),
+      HomeHorizontalBannerItemModel(image: 'assets/images/h_banner6.png'),
+      HomeHorizontalBannerItemModel(image: 'assets/images/h_banner7.png'),
+      HomeHorizontalBannerItemModel(image: 'assets/images/h_banner8.png'),
+    ];
+  }
+
+// drawer on tap functions
   void openDrawer() {
     scaffoldKey.currentState?.openDrawer();
   }
 
   void closeDrawer() {
     scaffoldKey.currentState?.openEndDrawer();
+  }
+
+// animatedsmoothindicator(carousel slider)
+  void onPageChange(index) {
+    activeIndex_ = index;
+    update();
   }
 }
