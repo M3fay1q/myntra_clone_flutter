@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:myntra_clone_flutter/src/helper/app_routes.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/models/home_banner_item_model.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/models/home_horizontal_banner_item_model.dart';
 
@@ -11,6 +12,7 @@ class HomeController extends GetxController {
   var bannerMenuItems = [];
   int activeIndex_ = 0;
   var horizontalBannerMenuItem = [];
+  int currentIndex = 0;
 
   @override
   void onInit() {
@@ -68,7 +70,7 @@ class HomeController extends GetxController {
     ];
   }
 
-// drawer on tap functions
+  // drawer on tap functions
   void openDrawer() {
     scaffoldKey.currentState?.openDrawer();
   }
@@ -77,9 +79,15 @@ class HomeController extends GetxController {
     scaffoldKey.currentState?.openEndDrawer();
   }
 
-// animatedsmoothindicator(carousel slider)
+  // animatedsmoothindicator(carousel slider)
   void onPageChange(index) {
     activeIndex_ = index;
+    update();
+  }
+
+  //Bottom Navigation bar onTap
+  void onItemTapped(int index) {
+    currentIndex = index;
     update();
   }
 }

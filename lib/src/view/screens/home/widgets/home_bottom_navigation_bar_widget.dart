@@ -9,7 +9,8 @@ class HomeBottomNavigationBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      // onTap: ,
+      onTap: (index) => homeController.onItemTapped(index),
+      currentIndex: homeController.currentIndex,
       backgroundColor: Colors.white,
       unselectedItemColor: Colors.black,
       selectedItemColor: Colors.black,

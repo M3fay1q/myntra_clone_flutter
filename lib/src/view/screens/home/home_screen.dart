@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:myntra_clone_flutter/src/view/screens/category/category_screen.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/home_controller.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/widgets/home_bottom_navigation_bar_widget.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/widgets/home_carousel_slider_widget.dart';
+import 'package:myntra_clone_flutter/src/view/screens/home/widgets/home_content_view.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/widgets/home_drawer_widget.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/widgets/home_horizontal_banner_widget.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/widgets/home_rounded_item_widget.dart';
@@ -66,25 +68,33 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
-          body: Column(
+          body: IndexedStack(
+            index: homeController.currentIndex > 0 ? 1 : 0,
             children: [
-              HomeRoundedItemWidget(),
-              Container(
-                color: const Color.fromARGB(255, 234, 234, 234),
-                height: 6,
-              ),
-              HomeCarouselSliderWidget(),
-              const SizedBox(height: 5),
-              Container(
-                color: const Color.fromARGB(255, 234, 234, 234),
-                height: 6,
-              ),
-              HomeHorizontalBannerWidget(),
+              const HomeContentView(),
+              tabBody(homeController.currentIndex),
             ],
           ),
           bottomNavigationBar: HomeBottomNavigationBarWidget(),
         );
       },
     );
+  }
+
+  Widget tabBody(int currentPage) {
+    switch (currentPage) {
+      case -1:
+        return Container(color: Colors.white);
+      case 0:
+        return HomeContentView();
+      case 1:
+        return CategoryScreen();
+      case 2:
+        return CategoryScreen();
+      case 3:
+        return const CategoryScreen();
+    }
+
+    return const HomeContentView();
   }
 }

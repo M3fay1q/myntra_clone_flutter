@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:myntra_clone_flutter/src/view/screens/category/category_screen.dart';
 import 'package:myntra_clone_flutter/src/view/screens/splash/splash_screen.dart';
 
 import '../view/screens/home/home_screen.dart';
@@ -14,6 +15,10 @@ class RouteHelper {
       GetPage(
         name: AppRoutes.home,
         page: () => HomeScreen(),
+      ),
+      GetPage(
+        name: AppRoutes.category,
+        page: () => CategoryScreen(),
       ),
     ];
   }
