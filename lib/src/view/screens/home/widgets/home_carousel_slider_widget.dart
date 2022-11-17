@@ -15,7 +15,7 @@ class HomeCarouselSliderWidget extends StatelessWidget {
         CarouselSlider.builder(
           itemCount: homeController.bannerMenuItems.length,
           options: CarouselOptions(
-            height: Get.height * 0.35,
+            height: Get.height * 0.36,
             autoPlay: true,
             onPageChanged: (index, reason) {
               homeController.onPageChange(index);

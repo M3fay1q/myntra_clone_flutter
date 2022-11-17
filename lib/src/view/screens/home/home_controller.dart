@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:myntra_clone_flutter/src/helper/app_routes.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/models/home_banner_item_model.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/models/home_horizontal_banner_item_model.dart';
 

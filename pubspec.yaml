@@ -81,7 +81,7 @@ flutter:
     - assets/images/banner_images/banner4.jpg
     - assets/images/banner_images/banner5.jpg
     # horizontal_banner_images
-    - assets/images/horizontal_banner.webp
+    - assets/images/horizontal_banner.jpg
     - assets/images/h_banner1.png
     - assets/images/h_banner2.png
     - assets/images/h_banner3.png
@@ -90,6 +90,20 @@ flutter:
     - assets/images/h_banner6.png
     - assets/images/h_banner7.png
     - assets/images/h_banner8.png
+    # categories_images
+    - assets/images/categories/category1.png
+    - assets/images/categories/category2.png
+    - assets/images/categories/category3.png
+    - assets/images/categories/category4.png
+    - assets/images/categories/category5.png
+    - assets/images/categories/category6.png
+    - assets/images/categories/category7.png
+    - assets/images/categories/category8.png
+    - assets/images/categories/category9.png
+    - assets/images/categories/category10.png
+    - assets/images/categories/category11.png
+    - assets/images/categories/category12.png
+
     
 
 

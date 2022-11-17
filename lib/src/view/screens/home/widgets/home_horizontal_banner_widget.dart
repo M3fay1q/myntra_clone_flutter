@@ -11,17 +11,17 @@ class HomeHorizontalBannerWidget extends StatelessWidget {
     return Column(
       children: [
         Container(
-          height: Get.height * 0.065,
+          height: Get.height * 0.15,
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/images/horizontal_banner.webp'),
+              image: AssetImage('assets/images/horizontal_banner.jpg'),
               fit: BoxFit.cover,
             ),
           ),
         ),
         Container(
           color: const Color.fromARGB(255, 247, 247, 247),
-          height: Get.height * 0.222,
+          height: Get.height * 0.33,
           child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: homeController.horizontalBannerMenuItem.length,

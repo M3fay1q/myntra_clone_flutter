@@ -10,7 +10,7 @@ class HomeRoundedItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      height: Get.height * 0.136,
+      height: Get.height * 0.135,
       child: Center(
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
@@ -22,7 +22,7 @@ class HomeRoundedItemWidget extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     backgroundColor: Colors.transparent,
-                    radius: 35,
+                    radius: 34,
                     backgroundImage: AssetImage(
                         homeController.roundedMenuItems[index].image),
                   ),

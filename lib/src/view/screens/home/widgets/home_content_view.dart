@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 import 'home_carousel_slider_widget.dart';
 import 'home_horizontal_banner_widget.dart';

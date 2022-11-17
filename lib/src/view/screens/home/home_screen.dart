@@ -3,11 +3,10 @@ import 'package:get/get.dart';
 import 'package:myntra_clone_flutter/src/view/screens/category/category_screen.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/home_controller.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/widgets/home_bottom_navigation_bar_widget.dart';
-import 'package:myntra_clone_flutter/src/view/screens/home/widgets/home_carousel_slider_widget.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/widgets/home_content_view.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/widgets/home_drawer_widget.dart';
-import 'package:myntra_clone_flutter/src/view/screens/home/widgets/home_horizontal_banner_widget.dart';
-import 'package:myntra_clone_flutter/src/view/screens/home/widgets/home_rounded_item_widget.dart';
+
+import '../studio/studio_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({Key? key}) : super(key: key);
@@ -86,13 +85,15 @@ class HomeScreen extends StatelessWidget {
       case -1:
         return Container(color: Colors.white);
       case 0:
-        return HomeContentView();
+        return const HomeContentView();
       case 1:
         return CategoryScreen();
       case 2:
-        return CategoryScreen();
+        return const StudioScreen();
       case 3:
-        return const CategoryScreen();
+        return CategoryScreen();
+      case 4:
+        return CategoryScreen();
     }
 
     return const HomeContentView();
