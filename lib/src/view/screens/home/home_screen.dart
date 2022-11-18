@@ -6,6 +6,7 @@ import 'package:myntra_clone_flutter/src/view/screens/home/widgets/home_bottom_n
 import 'package:myntra_clone_flutter/src/view/screens/home/widgets/home_content_view.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/widgets/home_drawer_widget.dart';
 
+import '../explore/explore_screen.dart';
 import '../studio/studio_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -91,7 +92,7 @@ class HomeScreen extends StatelessWidget {
       case 2:
         return StudioScreen();
       case 3:
-        return CategoryScreen();
+        return ExploreScreen();
       case 4:
         return CategoryScreen();
     }
