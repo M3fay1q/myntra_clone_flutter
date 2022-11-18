@@ -25,47 +25,66 @@ class HomeController extends GetxController {
   prepareRoundedItemModel() {
     roundedMenuItems = [
       HomeRoundedItemModel(
-          name: 'Men', image: 'assets/images/rounded_images/MEN.png'),
+          name: 'Men',
+          image: 'assets/images/home_image/rounded_images/MEN.png'),
       HomeRoundedItemModel(
-          name: 'WOMEN', image: 'assets/images/rounded_images/WOMEN.png'),
+          name: 'WOMEN',
+          image: 'assets/images/home_image/rounded_images/WOMEN.png'),
       HomeRoundedItemModel(
-          name: 'KIDS', image: 'assets/images/rounded_images/KID.png'),
+          name: 'KIDS',
+          image: 'assets/images/home_image/rounded_images/KID.png'),
       HomeRoundedItemModel(
-          name: 'BEAUTY', image: 'assets/images/rounded_images/BEAUTY.png'),
+          name: 'BEAUTY',
+          image: 'assets/images/home_image/rounded_images/BEAUTY.png'),
       HomeRoundedItemModel(
-          name: 'HOME', image: 'assets/images/rounded_images/HOME.png'),
+          name: 'HOME',
+          image: 'assets/images/home_image/rounded_images/HOME.png'),
       HomeRoundedItemModel(
           name: 'JEWELLERY',
-          image: 'assets/images/rounded_images/JEWELLERY.png'),
+          image: 'assets/images/home_image/rounded_images/JEWELLERY.png'),
       HomeRoundedItemModel(
           name: 'ESSENTIALS',
-          image: 'assets/images/rounded_images/ESSENTIALS.png'),
+          image: 'assets/images/home_image/rounded_images/ESSENTIALS.png'),
       HomeRoundedItemModel(
-          name: 'GADGETS', image: 'assets/images/rounded_images/GADGETS.png')
+          name: 'GADGETS',
+          image: 'assets/images/home_image/rounded_images/GADGETS.png')
     ];
   }
 
   // preparing banner item model
   bannerItemModel() {
     bannerMenuItems = [
-      HomeBannerItemModel(images: 'assets/images/banner_images/banner1.png'),
-      HomeBannerItemModel(images: 'assets/images/banner_images/banner2.png'),
-      HomeBannerItemModel(images: 'assets/images/banner_images/banner3.webp'),
-      HomeBannerItemModel(images: 'assets/images/banner_images/banner4.jpg'),
-      HomeBannerItemModel(images: 'assets/images/banner_images/banner5.jpg'),
+      HomeBannerItemModel(
+          images: 'assets/images/home_image/banner_images/banner1.png'),
+      HomeBannerItemModel(
+          images: 'assets/images/home_image/banner_images/banner2.png'),
+      HomeBannerItemModel(
+          images: 'assets/images/home_image/banner_images/banner3.webp'),
+      HomeBannerItemModel(
+          images: 'assets/images/home_image/banner_images/banner4.jpg'),
+      HomeBannerItemModel(
+          images: 'assets/images/home_image/banner_images/banner5.jpg'),
     ];
   }
 
   horizontalBannerItemModel() {
     horizontalBannerMenuItem = [
-      HomeHorizontalBannerItemModel(image: 'assets/images/h_banner1.png'),
-      HomeHorizontalBannerItemModel(image: 'assets/images/h_banner2.png'),
-      HomeHorizontalBannerItemModel(image: 'assets/images/h_banner3.png'),
-      HomeHorizontalBannerItemModel(image: 'assets/images/h_banner4.png'),
-      HomeHorizontalBannerItemModel(image: 'assets/images/h_banner5.png'),
-      HomeHorizontalBannerItemModel(image: 'assets/images/h_banner6.png'),
-      HomeHorizontalBannerItemModel(image: 'assets/images/h_banner7.png'),
-      HomeHorizontalBannerItemModel(image: 'assets/images/h_banner8.png'),
+      HomeHorizontalBannerItemModel(
+          image: 'assets/images/home_image/h_banner1.png'),
+      HomeHorizontalBannerItemModel(
+          image: 'assets/images/home_image/h_banner2.png'),
+      HomeHorizontalBannerItemModel(
+          image: 'assets/images/home_image/h_banner3.png'),
+      HomeHorizontalBannerItemModel(
+          image: 'assets/images/home_image/h_banner4.png'),
+      HomeHorizontalBannerItemModel(
+          image: 'assets/images/home_image/h_banner5.png'),
+      HomeHorizontalBannerItemModel(
+          image: 'assets/images/home_image/h_banner6.png'),
+      HomeHorizontalBannerItemModel(
+          image: 'assets/images/home_image/h_banner7.png'),
+      HomeHorizontalBannerItemModel(
+          image: 'assets/images/home_image/h_banner8.png'),
     ];
   }
 

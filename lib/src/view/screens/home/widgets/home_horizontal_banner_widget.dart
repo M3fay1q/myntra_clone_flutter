@@ -14,7 +14,8 @@ class HomeHorizontalBannerWidget extends StatelessWidget {
           height: Get.height * 0.15,
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/images/horizontal_banner.jpg'),
+              image:
+                  AssetImage('assets/images/home_image/horizontal_banner.jpg'),
               fit: BoxFit.cover,
             ),
           ),

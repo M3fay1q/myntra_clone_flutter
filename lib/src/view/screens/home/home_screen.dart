@@ -89,7 +89,7 @@ class HomeScreen extends StatelessWidget {
       case 1:
         return CategoryScreen();
       case 2:
-        return const StudioScreen();
+        return StudioScreen();
       case 3:
         return CategoryScreen();
       case 4:

@@ -66,30 +66,30 @@ flutter:
     - assets/images/drawer.jpg
     - assets/images/myntra_insider.jpg
     # rounded_images
-    - assets/images/rounded_images/MEN.png
-    - assets/images/rounded_images/WOMEN.png
-    - assets/images/rounded_images/KID.png
-    - assets/images/rounded_images/BEAUTY.png
-    - assets/images/rounded_images/HOME.png
-    - assets/images/rounded_images/JEWELLERY.png
-    - assets/images/rounded_images/ESSENTIALS.png
-    - assets/images/rounded_images/GADGETS.png
+    - assets/images/home_image/rounded_images/MEN.png
+    - assets/images/home_image/rounded_images/WOMEN.png
+    - assets/images/home_image/rounded_images/KID.png
+    - assets/images/home_image/rounded_images/BEAUTY.png
+    - assets/images/home_image/rounded_images/HOME.png
+    - assets/images/home_image/rounded_images/JEWELLERY.png
+    - assets/images/home_image/rounded_images/ESSENTIALS.png
+    - assets/images/home_image/rounded_images/GADGETS.png
     #banner_images
-    - assets/images/banner_images/banner1.png
-    - assets/images/banner_images/banner2.png
-    - assets/images/banner_images/banner3.webp
-    - assets/images/banner_images/banner4.jpg
-    - assets/images/banner_images/banner5.jpg
+    - assets/images/home_image/banner_images/banner1.png
+    - assets/images/home_image/banner_images/banner2.png
+    - assets/images/home_image/banner_images/banner3.webp
+    - assets/images/home_image/banner_images/banner4.jpg
+    - assets/images/home_image/banner_images/banner5.jpg
     # horizontal_banner_images
-    - assets/images/horizontal_banner.jpg
-    - assets/images/h_banner1.png
-    - assets/images/h_banner2.png
-    - assets/images/h_banner3.png
-    - assets/images/h_banner4.png
-    - assets/images/h_banner5.png
-    - assets/images/h_banner6.png
-    - assets/images/h_banner7.png
-    - assets/images/h_banner8.png
+    - assets/images/home_image/horizontal_banner.jpg
+    - assets/images/home_image/h_banner1.png
+    - assets/images/home_image/h_banner2.png
+    - assets/images/home_image/h_banner3.png
+    - assets/images/home_image/h_banner4.png
+    - assets/images/home_image/h_banner5.png
+    - assets/images/home_image/h_banner6.png
+    - assets/images/home_image/h_banner7.png
+    - assets/images/home_image/h_banner8.png
     # categories_images
     - assets/images/categories/category1.png
     - assets/images/categories/category2.png
@@ -103,6 +103,28 @@ flutter:
     - assets/images/categories/category10.png
     - assets/images/categories/category11.png
     - assets/images/categories/category12.png
+    # studio_rounded_images
+    - assets/images/studio/rounded_images/rounded_image1.png
+    - assets/images/studio/rounded_images/rounded_image2.png
+    - assets/images/studio/rounded_images/rounded_image3.png
+    - assets/images/studio/rounded_images/rounded_image4.png
+    - assets/images/studio/rounded_images/rounded_image5.png
+    # studio1_images
+    - assets/images/studio/studio1_images/studio1_image.png
+    - assets/images/studio/studio1_images/studio1_image1.png
+    - assets/images/studio/studio1_images/studio1_image2.png
+    - assets/images/studio/studio1_images/studio1_image3.png
+    - assets/images/studio/studio1_images/studio1_image4.png
+    - assets/images/studio/studio1_images/studio1_image5.png
+    - assets/images/studio/studio1_images/studio1_image6.png
+    - assets/images/studio/studio1_images/studio1_image7.png
+    - assets/images/studio/studio1_images/studio1_image8.png
+    # studio2_images
+    - assets/images/studio/studio2_images/studio2_image.png
+    - assets/images/studio/studio2_images/studio2_image1.png
+    - assets/images/studio/studio2_images/studio2_image2.png
+    - assets/images/studio/studio2_images/studio2_image3.png
+    - assets/images/studio/studio2_images/studio2_image4.png
 
     
 
