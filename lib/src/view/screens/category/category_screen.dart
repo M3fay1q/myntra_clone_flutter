@@ -9,22 +9,14 @@ class CategoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      shrinkWrap: true,
       itemCount: categoryController.categoryMenuItem.length,
       itemBuilder: ((context, index) {
         return Column(
           children: [
-            Container(
-              height: Get.height * 0.18,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(
-                      categoryController.categoryMenuItem[index].images),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            SizedBox(
-              height: Get.height * 0.003,
+            Image.asset(
+              categoryController.categoryMenuItem[index].images,
+              fit: BoxFit.cover,
             )
           ],
         );
