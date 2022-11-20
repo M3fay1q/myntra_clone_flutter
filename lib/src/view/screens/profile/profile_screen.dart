@@ -26,6 +26,7 @@ class ProfileScreen extends StatelessWidget {
             itemBuilder: ((context, index) {
               return Column(
                 children: [
+                  Padding(padding: EdgeInsets.all(4)),
                   SizedBox(
                     height: Get.height * 0.088,
                     child: ListTile(
@@ -34,16 +35,17 @@ class ProfileScreen extends StatelessWidget {
                       title: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Padding(padding: EdgeInsets.all(4)),
+                          const Padding(padding: EdgeInsets.all(2)),
                           Text(profileController.profileMenuItem[index].texts1,
                               style: GoogleFonts.roboto(
-                                  fontSize: 17,
+                                  fontSize: 15,
                                   fontWeight: FontWeight.w700,
                                   color:
                                       const Color.fromARGB(255, 79, 79, 79))),
+                          const Padding(padding: EdgeInsets.all(3)),
                           Text(profileController.profileMenuItem[index].texts2,
                               style: GoogleFonts.roboto(
-                                  fontSize: 13,
+                                  fontSize: 12,
                                   fontWeight: FontWeight.w400,
                                   color: const Color.fromARGB(
                                       255, 125, 125, 125))),
