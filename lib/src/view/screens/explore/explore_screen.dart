@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:myntra_clone_flutter/src/view/screens/explore/explore_controller.dart';
 
 class ExploreScreen extends StatelessWidget {
@@ -18,13 +19,11 @@ class ExploreScreen extends StatelessWidget {
               child: Center(
                 child: ListTile(
                   leading: Icon(exploreController.exploreMenuItem[index].icons),
-                  title: Text(
-                    exploreController.exploreMenuItem[index].texts,
-                    style: const TextStyle(
-                      fontSize: 20,
-                      color: Color.fromARGB(255, 87, 87, 87),
-                    ),
-                  ),
+                  title: Text(exploreController.exploreMenuItem[index].texts,
+                      style: GoogleFonts.roboto(
+                          fontSize: 19,
+                          fontWeight: FontWeight.w400,
+                          color: const Color.fromARGB(255, 67, 67, 67))),
                 ),
               ),
             ),

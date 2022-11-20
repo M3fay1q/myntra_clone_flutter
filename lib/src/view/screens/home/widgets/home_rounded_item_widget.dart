@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/home_controller.dart';
 
 class HomeRoundedItemWidget extends StatelessWidget {
@@ -22,15 +23,15 @@ class HomeRoundedItemWidget extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     backgroundColor: Colors.transparent,
-                    radius: 34,
+                    radius: Get.height * 0.046,
                     backgroundImage: AssetImage(
                         homeController.roundedMenuItems[index].image),
                   ),
                   Text(
                     homeController.roundedMenuItems[index].name,
-                    style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Color.fromARGB(255, 108, 108, 108)),
+                    style: GoogleFonts.roboto(
+                      fontWeight: FontWeight.w400,
+                    ),
                   ),
                 ],
               ),

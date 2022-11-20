@@ -14,7 +14,6 @@ class HomeBottomNavigationBarWidget extends StatelessWidget {
       backgroundColor: Colors.white,
       unselectedItemColor: Colors.black,
       selectedItemColor: Colors.black,
-      // currentIndex: ,
       type: BottomNavigationBarType.fixed,
       items: const [
         BottomNavigationBarItem(

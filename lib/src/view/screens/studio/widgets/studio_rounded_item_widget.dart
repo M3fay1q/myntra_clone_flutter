@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../studio_controller.dart';
 
 class StudioRoundedItemWidget extends StatelessWidget {
@@ -24,13 +25,11 @@ class StudioRoundedItemWidget extends StatelessWidget {
                       studioController.studioRoundedMenuItem[index].images),
                 ),
                 const Padding(padding: EdgeInsets.all(2)),
-                Text(
-                  studioController.studioRoundedMenuItem[index].text,
-                  style: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 10.2,
-                      color: Color.fromARGB(255, 101, 101, 101)),
-                ),
+                Text(studioController.studioRoundedMenuItem[index].text,
+                    style: GoogleFonts.roboto(
+                        fontSize: 11,
+                        fontWeight: FontWeight.w900,
+                        color: const Color.fromARGB(255, 77, 77, 77))),
               ],
             ),
           );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/home_controller.dart';
 
 class HomeDrawerWidget extends StatelessWidget {
@@ -22,17 +23,18 @@ class HomeDrawerWidget extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.grid_view_outlined),
-            title: const Text(
-              "Shop by Categories",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+            title: Text("Shop by Categories",
+                style: GoogleFonts.roboto(
+                    fontWeight: FontWeight.w700, fontSize: 16)),
             onTap: homeController.closeDrawer,
           ),
           ListTile(
             leading: const Icon(Icons.shopping_cart_checkout_outlined),
-            title: const Text("Orders"),
+            title: Text(
+              "Orders",
+              style:
+                  GoogleFonts.roboto(fontWeight: FontWeight.w400, fontSize: 16),
+            ),
             onTap: homeController.closeDrawer,
           ),
         ],
