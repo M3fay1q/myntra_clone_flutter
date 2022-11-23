@@ -15,15 +15,15 @@ class ExploreScreen extends StatelessWidget {
         return Column(
           children: [
             SizedBox(
-              height: Get.height * 0.088,
+              height: Get.height * 0.087,
               child: Center(
                 child: ListTile(
                   leading: Icon(exploreController.exploreMenuItem[index].icons),
                   title: Text(exploreController.exploreMenuItem[index].texts,
                       style: GoogleFonts.roboto(
                           fontSize: 19,
-                          fontWeight: FontWeight.w400,
-                          color: const Color.fromARGB(255, 67, 67, 67))),
+                          fontWeight: FontWeight.w300,
+                          color: const Color.fromARGB(255, 54, 54, 54))),
                 ),
               ),
             ),

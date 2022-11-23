@@ -26,7 +26,7 @@ class ProfileScreen extends StatelessWidget {
             itemBuilder: ((context, index) {
               return Column(
                 children: [
-                  Padding(padding: EdgeInsets.all(4)),
+                  const Padding(padding: EdgeInsets.all(4)),
                   SizedBox(
                     height: Get.height * 0.088,
                     child: ListTile(

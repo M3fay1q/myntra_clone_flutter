@@ -5,5 +5,3 @@ class HomeRoundedItemModel {
 
   HomeRoundedItemModel({required this.name, required this.image});
 }
-
-
