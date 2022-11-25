@@ -127,6 +127,43 @@ flutter:
     - assets/images/studio/studio2_images/studio2_image2.png
     - assets/images/studio/studio2_images/studio2_image3.png
     - assets/images/studio/studio2_images/studio2_image4.png
+    # brand_men_home
+    - assets/images/brand_home_images/round_image/round_image1.png
+    - assets/images/brand_home_images/round_image/round_image2.png
+    - assets/images/brand_home_images/round_image/round_image3.png
+    - assets/images/brand_home_images/round_image/round_image4.png
+    - assets/images/brand_home_images/round_image/round_image5.png
+    - assets/images/brand_home_images/round_image/round_image6.png
+    - assets/images/brand_home_images/round_image/round_image7.png
+    - assets/images/brand_home_images/round_image/round_image8.png
+    - assets/images/brand_home_images/round_image/round_image9.png
+    - assets/images/brand_home_images/round_image/round_image10.png
+    - assets/images/brand_home_images/round_image/banner.png
+
+    - assets/images/brand_home_images/c_banner/c_banner1.png
+    - assets/images/brand_home_images/c_banner/c_banner2.png
+    - assets/images/brand_home_images/c_banner/c_banner3.png
+    - assets/images/brand_home_images/c_banner/c_banner4.png
+    - assets/images/brand_home_images/c_banner/c_banner5.png
+    - assets/images/brand_home_images/c_banner/banner2.png
+
+    - assets/images/brand_home_images/c2_banner/c2_banner1.png
+    - assets/images/brand_home_images/c2_banner/c2_banner2.png
+    - assets/images/brand_home_images/c2_banner/c2_banner3.png
+    - assets/images/brand_home_images/c2_banner/c2_banner4.png
+    - assets/images/brand_home_images/c2_banner/banner3.png
+
+    - assets/images/brand_home_images/h_banner/h_banner1.png
+    - assets/images/brand_home_images/h_banner/h_banner2.png
+    - assets/images/brand_home_images/h_banner/h_banner3.png
+    - assets/images/brand_home_images/h_banner/h_banner4.png
+    - assets/images/brand_home_images/h_banner/h_banner5.png
+    - assets/images/brand_home_images/h_banner/h_banner6.png
+    - assets/images/brand_home_images/h_banner/banner4.png
+    
+
+
+
 
     
 
