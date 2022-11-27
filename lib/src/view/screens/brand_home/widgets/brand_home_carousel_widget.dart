@@ -1,5 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myntra_clone_flutter/src/view/screens/brand_home/brand_home_controller.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -51,6 +51,17 @@ class BrandHomeCarouselWidget extends StatelessWidget {
             activeDotColor: Color.fromARGB(255, 91, 172, 239),
             dotColor: Color.fromARGB(255, 207, 207, 207),
           ),
+        ),
+        SizedBox(
+          height: Get.height * 0.01,
+        ),
+        Container(
+          color: Colors.black,
+          height: Get.height * 0.0004,
+        ),
+        const Image(
+          image: AssetImage(
+              'assets/images/brand_home_images/c_banner/banner2.png'),
         ),
       ],
     );

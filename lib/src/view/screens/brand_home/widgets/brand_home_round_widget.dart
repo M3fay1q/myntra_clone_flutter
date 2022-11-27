@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:myntra_clone_flutter/src/view/screens/brand_home/Brand_home_controller.dart';
+import 'package:myntra_clone_flutter/src/view/screens/brand_home/brand_home_controller.dart';
+
+import '../../../../helper/app_routes.dart';
 
 class BrandHomeRoundWidget extends StatelessWidget {
   BrandHomeRoundWidget({Key? key}) : super(key: key);
@@ -24,11 +26,16 @@ class BrandHomeRoundWidget extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      CircleAvatar(
-                        backgroundColor: Colors.transparent,
-                        radius: Get.height * 0.048,
-                        backgroundImage: AssetImage(brandHomeController
-                            .brandHomeRoundMenuItem[index].images),
+                      InkWell(
+                        child: CircleAvatar(
+                          backgroundColor: Colors.transparent,
+                          radius: Get.height * 0.048,
+                          backgroundImage: AssetImage(brandHomeController
+                              .brandHomeRoundMenuItem[index].images),
+                        ),
+                        onTap: () {
+                          Get.toNamed(AppRoutes.brandHomeTShirt);
+                        },
                       ),
                       Text(
                         brandHomeController.brandHomeRoundMenuItem[index].texts,

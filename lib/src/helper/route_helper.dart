@@ -3,6 +3,7 @@ import 'package:myntra_clone_flutter/src/view/screens/category/category_screen.d
 import 'package:myntra_clone_flutter/src/view/screens/splash/splash_screen.dart';
 
 import '../view/screens/brand_home/brand_home_screen.dart';
+import '../view/screens/brand_home_t_shirt/brand_home_t_shirt_screen.dart';
 import '../view/screens/home/home_screen.dart';
 import 'app_routes.dart';
 
@@ -22,8 +23,12 @@ class RouteHelper {
         page: () => CategoryScreen(),
       ),
       GetPage(
-        name: AppRoutes.brandMen,
+        name: AppRoutes.brandHome,
         page: () => BrandMenHomeScreen(),
+      ),
+      GetPage(
+        name: AppRoutes.brandHomeTShirt,
+        page: () => BrandHomeTShirtScreen(),
       ),
     ];
   }

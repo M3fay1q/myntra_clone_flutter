@@ -160,6 +160,21 @@ flutter:
     - assets/images/brand_home_images/h_banner/h_banner5.png
     - assets/images/brand_home_images/h_banner/h_banner6.png
     - assets/images/brand_home_images/h_banner/banner4.png
+    # t_shirt
+    - assets/images/t_shirt/tshirt1.png
+    - assets/images/t_shirt/tshirt2.png
+    - assets/images/t_shirt/tshirt3.png
+    - assets/images/t_shirt/tshirt4.png
+    - assets/images/t_shirt/tshirt5.png
+    - assets/images/t_shirt/tshirt6.png
+    - assets/images/t_shirt/tshirt7.png
+    - assets/images/t_shirt/tshirt8.png
+    - assets/images/t_shirt/tshirt9.png
+    - assets/images/t_shirt/tshirt10.png
+    - assets/images/t_shirt/tshirt11.png
+    - assets/images/t_shirt/tshirt12.png
+    - assets/images/t_shirt/tshirt13.png
+    - assets/images/t_shirt/tshirt14.png
     
 
 

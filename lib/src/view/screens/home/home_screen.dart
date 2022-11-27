@@ -26,6 +26,7 @@ class HomeScreen extends StatelessWidget {
           drawer: HomeDrawerWidget(),
           appBar: AppBar(
             backgroundColor: Colors.white,
+            titleSpacing: 1,
             title: Image.asset('assets/images/myntra_insider.jpg',
                 fit: BoxFit.cover),
             elevation: 1,

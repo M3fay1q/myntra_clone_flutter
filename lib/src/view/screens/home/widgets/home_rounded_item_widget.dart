@@ -30,7 +30,7 @@ class HomeRoundedItemWidget extends StatelessWidget {
                           homeController.roundedMenuItems[index].image),
                     ),
                     onTap: () {
-                      Get.toNamed(AppRoutes.brandMen);
+                      Get.toNamed(AppRoutes.brandHome);
                     },
                   ),
                   Text(
