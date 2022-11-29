@@ -33,7 +33,7 @@ class HomeCarouselSliderWidget extends StatelessWidget {
                 image: DecorationImage(
                   image:
                       AssetImage(homeController.bannerMenuItems[index].images),
-                  fit: BoxFit.cover,
+                  fit: BoxFit.fill,
                 ),
               ),
             );

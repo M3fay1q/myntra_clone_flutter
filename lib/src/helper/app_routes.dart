@@ -5,4 +5,5 @@ class AppRoutes {
   static const String category = '/category';
   static const String brandHome = '/brandHome';
   static const String brandHomeTShirt = '/brandHomeTShirt';
+  static const String tShirtDetails = '/tShirtDetails';
 }

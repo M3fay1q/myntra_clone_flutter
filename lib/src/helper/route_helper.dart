@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:myntra_clone_flutter/src/view/screens/category/category_screen.dart';
 import 'package:myntra_clone_flutter/src/view/screens/splash/splash_screen.dart';
+import 'package:myntra_clone_flutter/src/view/screens/t_shirt_details/t_shirt_details_screen.dart';
 
 import '../view/screens/brand_home/brand_home_screen.dart';
 import '../view/screens/brand_home_t_shirt/brand_home_t_shirt_screen.dart';
@@ -29,6 +30,10 @@ class RouteHelper {
       GetPage(
         name: AppRoutes.brandHomeTShirt,
         page: () => BrandHomeTShirtScreen(),
+      ),
+      GetPage(
+        name: AppRoutes.tShirtDetails,
+        page: () => TShirtDetailsScreen(),
       ),
     ];
   }

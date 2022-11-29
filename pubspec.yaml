@@ -175,7 +175,17 @@ flutter:
     - assets/images/t_shirt/tshirt12.png
     - assets/images/t_shirt/tshirt13.png
     - assets/images/t_shirt/tshirt14.png
-    
+    # t-shirt details
+    - assets/images/t_shirt/t_details/t_detail1.png
+    - assets/images/t_shirt/t_details/t_detail2.png
+    - assets/images/t_shirt/t_details/t_detail3.png
+    - assets/images/t_shirt/t_details/t_detail4.png
+    - assets/images/t_shirt/t_details/t_detail5.png
+    - assets/images/t_shirt/t_details/size.png
+    - assets/images/t_shirt/t_details/delivery.png
+    - assets/images/t_shirt/t_details/ratings.png
+    - assets/images/t_shirt/t_details/ratings2.png
+   
 
 
 
