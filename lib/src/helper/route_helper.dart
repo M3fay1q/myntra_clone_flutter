@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:myntra_clone_flutter/src/view/screens/category/category_screen.dart';
+import 'package:myntra_clone_flutter/src/view/screens/login/login_screen.dart';
 import 'package:myntra_clone_flutter/src/view/screens/splash/splash_screen.dart';
 import 'package:myntra_clone_flutter/src/view/screens/t_shirt_details/t_shirt_details_screen.dart';
 
@@ -34,6 +35,10 @@ class RouteHelper {
       GetPage(
         name: AppRoutes.tShirtDetails,
         page: () => TShirtDetailsScreen(),
+      ),
+      GetPage(
+        name: AppRoutes.login,
+        page: () => LoginScreen(),
       ),
     ];
   }

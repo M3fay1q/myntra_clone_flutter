@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myntra_clone_flutter/src/helper/app_routes.dart';
 import 'package:myntra_clone_flutter/src/view/screens/home/home_controller.dart';
 
 class HomeDrawerWidget extends StatelessWidget {
@@ -26,7 +27,9 @@ class HomeDrawerWidget extends StatelessWidget {
             title: Text("Shop by Categories",
                 style: GoogleFonts.roboto(
                     fontWeight: FontWeight.w700, fontSize: 16)),
-            onTap: homeController.closeDrawer,
+            onTap: (() {
+              Get.toNamed(AppRoutes.login);
+            }),
           ),
           ListTile(
             leading: const Icon(Icons.shopping_cart_checkout_outlined),
