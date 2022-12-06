@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:myntra_clone_flutter/src/helper/app_routes.dart';
+import 'package:myntra_clone_flutter/src/view/screens/login/login_controller.dart';
 
 class BuildLoginButtonWidget extends StatelessWidget {
-  const BuildLoginButtonWidget({Key? key}) : super(key: key);
+  BuildLoginButtonWidget({Key? key}) : super(key: key);
+  final LoginController loginController = Get.find();
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class BuildLoginButtonWidget extends StatelessWidget {
             ),
             padding: const EdgeInsets.all(15)),
         onPressed: (() {
-          Get.toNamed(AppRoutes.home);
+          (loginController.validator());
         }),
         child: Text(
           'LOGIN',

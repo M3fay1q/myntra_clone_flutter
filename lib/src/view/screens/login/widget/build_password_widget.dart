@@ -34,15 +34,22 @@ class BuildPasswordWidget extends StatelessWidget {
               ),
             ],
           ),
-          height: 60,
+          height: 65,
           child: TextFormField(
             obscureText: true,
             style: GoogleFonts.roboto(
               color: Colors.black87,
             ),
+            validator: (value) {
+              if (value == null || value.isEmpty) {
+                return "    Enter a password";
+              } else {
+                return null;
+              }
+            },
             decoration: InputDecoration(
               border: InputBorder.none,
-              contentPadding: const EdgeInsets.only(top: 14),
+              contentPadding: const EdgeInsets.only(top: 16),
               prefixIcon: const Icon(
                 Icons.lock,
                 color: Color.fromARGB(255, 192, 61, 104),
