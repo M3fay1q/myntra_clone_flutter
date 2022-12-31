@@ -70,21 +70,29 @@ class HomeController extends GetxController {
   horizontalBannerItemModel() {
     horizontalBannerMenuItem = [
       HomeHorizontalBannerItemModel(
-          image: 'assets/images/home_image/h_banner1.png'),
+          image:
+              'assets/images/home_image/horizontal_banner_images/h_banner1.png'),
       HomeHorizontalBannerItemModel(
-          image: 'assets/images/home_image/h_banner2.png'),
+          image:
+              'assets/images/home_image/horizontal_banner_images/h_banner2.png'),
       HomeHorizontalBannerItemModel(
-          image: 'assets/images/home_image/h_banner3.png'),
+          image:
+              'assets/images/home_image/horizontal_banner_images/h_banner3.png'),
       HomeHorizontalBannerItemModel(
-          image: 'assets/images/home_image/h_banner4.png'),
+          image:
+              'assets/images/home_image/horizontal_banner_images/h_banner4.png'),
       HomeHorizontalBannerItemModel(
-          image: 'assets/images/home_image/h_banner5.png'),
+          image:
+              'assets/images/home_image/horizontal_banner_images/h_banner5.png'),
       HomeHorizontalBannerItemModel(
-          image: 'assets/images/home_image/h_banner6.png'),
+          image:
+              'assets/images/home_image/horizontal_banner_images/h_banner6.png'),
       HomeHorizontalBannerItemModel(
-          image: 'assets/images/home_image/h_banner7.png'),
+          image:
+              'assets/images/home_image/horizontal_banner_images/h_banner7.png'),
       HomeHorizontalBannerItemModel(
-          image: 'assets/images/home_image/h_banner8.png'),
+          image:
+              'assets/images/home_image/horizontal_banner_images/h_banner8.png'),
     ];
   }
 

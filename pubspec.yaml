@@ -84,15 +84,15 @@ flutter:
     - assets/images/home_image/banner_images/banner4.jpg
     - assets/images/home_image/banner_images/banner5.jpg
     # horizontal_banner_images
-    - assets/images/home_image/horizontal_banner.jpg
-    - assets/images/home_image/h_banner1.png
-    - assets/images/home_image/h_banner2.png
-    - assets/images/home_image/h_banner3.png
-    - assets/images/home_image/h_banner4.png
-    - assets/images/home_image/h_banner5.png
-    - assets/images/home_image/h_banner6.png
-    - assets/images/home_image/h_banner7.png
-    - assets/images/home_image/h_banner8.png
+    - assets/images/home_image/horizontal_banner_images/horizontal_banner.jpg
+    - assets/images/home_image/horizontal_banner_images/h_banner1.png
+    - assets/images/home_image/horizontal_banner_images/h_banner2.png
+    - assets/images/home_image/horizontal_banner_images/h_banner3.png
+    - assets/images/home_image/horizontal_banner_images/h_banner4.png
+    - assets/images/home_image/horizontal_banner_images/h_banner5.png
+    - assets/images/home_image/horizontal_banner_images/h_banner6.png
+    - assets/images/home_image/horizontal_banner_images/h_banner7.png
+    - assets/images/home_image/horizontal_banner_images/h_banner8.png
     # categories_images
     - assets/images/categories/category1.png
     - assets/images/categories/category2.png

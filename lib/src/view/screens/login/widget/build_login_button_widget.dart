@@ -14,7 +14,7 @@ class BuildLoginButtonWidget extends StatelessWidget {
       width: double.infinity,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-            primary: const Color.fromARGB(255, 255, 255, 255),
+            backgroundColor: const Color.fromARGB(255, 255, 255, 255),
             elevation: 5,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(14),
