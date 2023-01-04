@@ -23,7 +23,7 @@ class ExploreScreen extends StatelessWidget {
                       style: GoogleFonts.roboto(
                           fontSize: 19,
                           fontWeight: FontWeight.w300,
-                          color: const Color.fromARGB(255, 54, 54, 54))),
+                          color: const Color.fromARGB(255, 41, 41, 41))),
                 ),
               ),
             ),

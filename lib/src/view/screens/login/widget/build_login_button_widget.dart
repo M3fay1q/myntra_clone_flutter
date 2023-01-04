@@ -14,10 +14,10 @@ class BuildLoginButtonWidget extends StatelessWidget {
       width: double.infinity,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-            backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+            backgroundColor: const Color.fromARGB(255, 192, 61, 104),
             elevation: 5,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(14),
+              borderRadius: BorderRadius.circular(0),
             ),
             padding: const EdgeInsets.all(15)),
         onPressed: (() {
@@ -26,7 +26,9 @@ class BuildLoginButtonWidget extends StatelessWidget {
         child: Text(
           'LOGIN',
           style: GoogleFonts.roboto(
-              color: Colors.pink, fontSize: 18, fontWeight: FontWeight.bold),
+              color: const Color.fromARGB(255, 255, 255, 255),
+              fontSize: 18,
+              fontWeight: FontWeight.bold),
         ),
       ),
     );

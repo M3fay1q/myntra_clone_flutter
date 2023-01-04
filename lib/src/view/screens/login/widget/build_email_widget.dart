@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:form_field_validator/form_field_validator.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../login_controller.dart';
@@ -15,47 +16,39 @@ class BuildEmailWidget extends StatelessWidget {
         Text(
           'Email',
           style: GoogleFonts.roboto(
-              color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+              color: const Color.fromARGB(255, 192, 61, 104),
+              fontSize: 15,
+              fontWeight: FontWeight.bold),
         ),
         const SizedBox(
           height: 10,
         ),
-        Container(
-          alignment: Alignment.centerLeft,
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(10),
-            boxShadow: const [
-              BoxShadow(
-                color: Colors.black26,
-                blurRadius: 6,
-                offset: Offset(0, 2),
+        TextFormField(
+          // controller: loginController.userNameController,
+          decoration: InputDecoration(
+              border: const OutlineInputBorder(),
+              focusedBorder: OutlineInputBorder(
+                borderSide: const BorderSide(
+                    color: Color.fromARGB(255, 192, 61, 104), width: 1.0),
+                borderRadius: BorderRadius.circular(0.0),
               ),
-            ],
-          ),
-          height: 65,
-          child: TextFormField(
-            keyboardType: TextInputType.emailAddress,
-            style: GoogleFonts.roboto(
-              color: Colors.black87,
-            ),
-            validator: ((value) {
-              if (value == null || value.isEmpty) {
-                return "    Enter a email address";
-              } else {
-                return null;
-              }
-            }),
-            decoration: InputDecoration(
-              border: InputBorder.none,
-              contentPadding: const EdgeInsets.only(top: 16),
+              enabledBorder: OutlineInputBorder(
+                borderSide: const BorderSide(
+                    color: Color.fromARGB(255, 192, 61, 104), width: 1.0),
+                borderRadius: BorderRadius.circular(0.0),
+              ),
               prefixIcon: const Icon(
                 Icons.email,
                 color: Color.fromARGB(255, 192, 61, 104),
               ),
-              hintText: 'Email',
-              hintStyle: GoogleFonts.roboto(color: Colors.black38),
-            ),
+              hintText: 'Enter an Email id',
+              hintStyle: GoogleFonts.roboto(
+                  color: const Color.fromARGB(255, 178, 109, 132))),
+          validator: MultiValidator(
+            [
+              RequiredValidator(errorText: "Please enter email id"),
+              EmailValidator(errorText: "Enter valid email id"),
+            ],
           ),
         ),
       ],

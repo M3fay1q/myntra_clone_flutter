@@ -15,11 +15,12 @@ class BuildRememberWidget extends StatelessWidget {
       child: Row(
         children: [
           Theme(
-            data: ThemeData(unselectedWidgetColor: Colors.white),
+            data: ThemeData(
+                unselectedWidgetColor: const Color.fromARGB(255, 192, 61, 104)),
             child: Checkbox(
                 value: loginController.isRememberme,
-                checkColor: Colors.pink,
-                activeColor: Colors.white,
+                checkColor: const Color.fromARGB(255, 192, 61, 104),
+                activeColor: const Color.fromARGB(255, 192, 61, 104),
                 onChanged: (value) {
                   loginController.onChanged(value);
                 }),
@@ -27,7 +28,7 @@ class BuildRememberWidget extends StatelessWidget {
           Text(
             'Remember me',
             style: GoogleFonts.roboto(
-              color: Colors.white,
+              color: const Color.fromARGB(255, 192, 61, 104),
               fontWeight: FontWeight.bold,
             ),
           ),

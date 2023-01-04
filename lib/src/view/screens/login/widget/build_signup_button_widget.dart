@@ -13,14 +13,14 @@ class BuildSignupButtonWidget extends StatelessWidget {
             TextSpan(
               text: 'Don\'t have an Account? ',
               style: GoogleFonts.roboto(
-                  color: Colors.white,
+                  color: const Color.fromARGB(255, 192, 61, 104),
                   fontSize: 18,
                   fontWeight: FontWeight.w500),
             ),
             TextSpan(
               text: 'Sign Up',
               style: GoogleFonts.roboto(
-                  color: Colors.white,
+                  color: const Color.fromARGB(255, 192, 61, 104),
                   fontSize: 18,
                   fontWeight: FontWeight.bold),
             ),

@@ -14,7 +14,7 @@ class BuildForgetPasswordWidget extends StatelessWidget {
         child: Text(
           'Forget Password?',
           style: GoogleFonts.roboto(
-            color: Colors.white,
+            color: const Color.fromARGB(255, 192, 61, 104),
             fontWeight: FontWeight.bold,
           ),
         ),

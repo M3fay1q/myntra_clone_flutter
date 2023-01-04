@@ -21,16 +21,7 @@ class LoginScreen extends StatelessWidget {
             height: double.infinity,
             width: double.infinity,
             decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  Color.fromARGB(255, 218, 112, 147),
-                  Color.fromARGB(255, 235, 79, 131),
-                  Color.fromARGB(255, 215, 27, 90),
-                  Color.fromARGB(255, 187, 7, 67),
-                ],
-              ),
+              color: Color.fromARGB(255, 255, 255, 255),
             ),
             child: SingleChildScrollView(
               physics: const AlwaysScrollableScrollPhysics(),
@@ -47,7 +38,7 @@ class LoginScreen extends StatelessWidget {
                     Text(
                       'Sign In',
                       style: GoogleFonts.roboto(
-                          color: Colors.white,
+                          color: const Color.fromARGB(255, 192, 61, 104),
                           fontSize: 40,
                           fontWeight: FontWeight.bold),
                     ),
