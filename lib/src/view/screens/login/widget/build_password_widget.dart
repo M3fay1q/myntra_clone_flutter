@@ -25,7 +25,6 @@ class BuildPasswordWidget extends StatelessWidget {
           height: 10,
         ),
         TextFormField(
-          // controller: loginController.passwordController,
           obscureText: true,
           decoration: InputDecoration(
               border: const OutlineInputBorder(),

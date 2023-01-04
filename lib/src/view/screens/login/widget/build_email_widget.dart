@@ -24,7 +24,6 @@ class BuildEmailWidget extends StatelessWidget {
           height: 10,
         ),
         TextFormField(
-          // controller: loginController.userNameController,
           decoration: InputDecoration(
               border: const OutlineInputBorder(),
               focusedBorder: OutlineInputBorder(
