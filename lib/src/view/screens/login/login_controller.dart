@@ -18,20 +18,4 @@ class LoginController extends GetxController {
       return;
     }
   }
-
-  String? emailValidate(String? value) {
-    if (value == null || value.isEmpty) {
-      return "    Enter a email address";
-    } else {
-      return null;
-    }
-  }
-
-  String? passwordValidate(String? value) {
-    if (value == null || value.isEmpty) {
-      return "    Enter a password";
-    } else {
-      return null;
-    }
-  }
 }
